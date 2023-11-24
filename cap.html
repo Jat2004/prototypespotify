@@ -1,0 +1,154 @@
+<head>
+    <title>Gabi By: Juan Karlos, Zild</title>
+
+    <style>
+        h1 {
+            font-size: 100px;
+            color: lightblue;
+            font-family: Tacoma;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: Red;
+            font-family: Tacoma;
+        }
+
+        body {
+            font-size: 50px;
+            color: lightblue;
+            opacity: 1.0;
+            overflow: hidden; 
+        }
+
+        video {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 10%;
+            z-index: -1; 
+        }
+
+        .content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .transparent-image {
+            opacity: 1.0;
+        }
+		
+		 
+        .lyrics {
+            font-size: 30px;
+            color: lightblue;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+			
+            border-radius: 30px;
+        }
+		.highlight {
+            background-color: yellow;
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1></h1><br><br>
+        <br><br><br><br>
+       
+    </div>
+
+    <video autoplay loop muted id="background-video">
+        <source src="sky.mp4" type="video/mp4">
+       
+    </video>
+
+    <audio autoplay loop id="background-audio">
+        <source src="gabi.mp3" type="audio/mpeg">
+       
+    </audio>
+
+    <script>
+        var audio = document.getElementById('background-audio');
+        audio.currentTime = 15;
+    </script>
+	
+	<div class="content">
+	<br><br>
+       
+        <br><br><br><br>
+        <div class="lyrics">  
+            <marquee behavior="scroll" direction="up" scrollamount="1.0"> 
+               <br>Gabi By: Juan Karlos and Zild<br><br><br> <br><br>  <br><br>  
+			'Tol, ano ba ang nasa isip mo?<br>
+           <br>  Siya pa rin ba? Wala nang nagbago<br>
+			
+               <br> Oh, gusto mo bang ating pag-usapan?<br>
+              <br> Sabihin mo lang, ako'y handang ika'y pakinggan<br>
+                
+				 <br>Oh, gabi na naman<br>
+               <br> Ilabas ang pulutan <br>
+           <br> Tara't magwalwalan<br> 
+           <br> Hanggang sa maka-move on<br>
+				
+				 <br>Oh, gabi na naman <br>
+             <br> Siya pa rin ang laman ng isipan <br>
+               <br> Oh, gabi na naman <br>
+                <br>Siya pa rin ang laman ng isipan<br>
+           	
+			 <br>Nakakailang bote na, kaibigan<br>
+              <br>  Mabuti na lang, ika'y aking natawagan<br>
+              <br> Palagi na 'kong lutang, nanonood ng mukbang<br>
+               <br> Para lang malibang<br>
+			   <br> Natatawa lang ako sa tuwing nagkakagan'to<br>
+			   <br> Nawawala ang angas ko<br>
+				
+				 <br>Oh, gabi na naman<br>
+                <br>  Ilabas ang pulutan<br>
+                <br> Tara't magwalwalan<br>
+                 <br>Hanggang makalimutan<br>
+				
+				 <br>Oh, gabi na naman <br>
+                <br>Siya pa rin ang laman ng isipan <br>
+                <br> Oh, gabi na naman<br>
+                <br> Siya pa rin ang laman ng isipan<br>
+				
+				 <br>Ooh-ooh-ooh, ooh-ooh<br>
+             <br>  Ooh-ooh-ooh, ooh-ooh<br>
+                <br>'Tol, ano ba ang nasa isip mo?<br>
+            
+			   <br>Oh, gabi na naman (oh, gabi na naman) <br>
+              <br>Ilabas ang pulutan (ang gitara'y balikan)<br>
+               <br>Tara't magwalwalan (boses nagkaubusan)<br>
+               <br> Hanggang sa maka-move on (hanggang makalimutan)<br>
+				
+				 <br>Oh, gabi na naman (sa umaga o gabi, 'di ako mapakali) <br>
+               <br> Ilabas ang pulutan (mabuti nga, andiyan ka, p're, sa umpisa hanggang huli)
+               <br>Tara't magwalwalan (lagi mong tatandaan na ako'y nandito lang) <br>
+               <br>Hanggang sa maka-move on (laging masasandalan kahit sino'ng dumaan) <br>
+			   
+			  <br> Oh, gabi na naman <br>
+            <br> At siya pa rin ang laman ng isipan <br>
+           <br> Oh, gabi na naman <br>
+            <br> At siya pa rin ang laman ng isipan<br>
+			
+			 Oh, gabi na naman
+				
+				
+            </marquee>
+			
+        </div>	
+		<br> <br> 
+        <button><a href="main.html"><h4>Back</h4></a></button>
+   
+	 
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WELCOME TO THE ALBUM OF DIONELA</title>
+    <style>
+        body {
+            font-family: 'TACOMA', sans-serif;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: 2px solid #e74c3c;
+        }
+
+        td {
+            padding: 10px;
+            border: 2px solid #e74c3c;
+        }
+
+        img:hover {
+            background-color: yellow;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        .flippable {
+            transition: transform 0.5s;
+        }
+
+        .flippable:hover {
+            transform: scaleX(-1);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a img {
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .transparent-image {
+            opacity: 0.7; /* Adjust the opacity value as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ALBUM BY: DIONELA</h1>
+    <center>
+        <a href="picture.html">
+            <img class="flippable transparent-image" src="ere.jpg" height="300px" width="250px">
+        </a>
+        <a href="picture1.html">
+            <img class="flippable transparent-image" src="gave.png" height="300px" width="250px">
+        </a>
+        <a href="picture2.html">
+            <img class="flippable transparent-image" src="demons.jpg" height="300px" width="250px">
+        </a>
+        <a href="picture3.html">
+            <img class="flippable transparent-image" src="moon.jpg" height="300px" width="250px">
+        </a>
+        <video autoplay loop muted id="background-video">
+            <source src="galaxy.mp4" type="video/mp4">
+        </video>
+    </center>
+</body>
+
+</html>

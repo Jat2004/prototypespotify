@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ere By: Juan Karlos</title>
+
+    <style>
+        h1 {
+            font-size: 100px;
+            color: lightgreen;
+            font-family: Tacoma;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: Red;
+            font-family: Tacoma;
+        }
+
+        body {
+            font-size: 50px;
+            color: red;
+            opacity: 1.0;
+            overflow: hidden; 
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; 
+        }
+
+        .content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .transparent-image {
+            opacity: 1.0;
+        }
+
+        .lyrics {
+            font-size: 30px;
+            color: lightblue;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+			
+            border-radius: 30px;
+        }
+		.highlight {
+            background-color: yellow;
+	    }
+		
+    </style>
+</head>
+
+<body>
+
+    <video autoplay loop muted id="background-video">
+        <source src="dance.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop id="background-audio">
+        <source src="ere.mp3" type="audio/mpeg">
+    </audio>
+	<script>
+        var audio = document.getElementById('background-audio');
+        audio.currentTime = 2;
+    </script>
+
+    <div class="content">
+	<br><br>
+        <h1></h1>
+        <br><br><br><br>
+        <div class="lyrics">
+            <marquee behavior="scroll" direction="up" scrollamount="1.5"> 
+               <br>Ere By: Juan Karlos<br><br><br> <br><br>  
+			Lahat ng pagmamahal<br>
+               At oras na aking binigay<br>
+              Parang 'di mo pansin<br>
+                Ang sama ko sa 'yong paningin<br>
+                 Hmm, hmm<br>
+                
+				Oh, 'di ba? Nakakaputang ina <br>
+                Tayo'y lumilipad, at ako'y iniwan mo <br>
+               Oh, 'di ba? Pinagmukha mo 'kong tanga<br> 
+              Tayo'y lumilipad, at ako'y iniwan mo<br>
+				
+				'Di mo agad sinabi <br>
+               Na may duda na sa 'yong isip (duda, duda) <br>
+                Pinalalim mo pa <br>
+                Ang sugat dito sa aking dibdib <br>
+                Oh, shit <br>
+				
+			Hmm, 'di ba? Nakakaputang ina<br>
+               Tayo'y lumilipad, at ako'y iniwan mo<br>
+                Oh, 'di ba? Pinagmukha mo 'kong tanga<br>
+                 Tayo'y lumilipad, at ako'y iniwan mo<br>
+				
+				 Sa ere, ere, ere<br>
+                At ako'y iniwan mo<br>
+                Sa ere, ere, oh, ere, ooh-ooh<br>
+               At ako'y iniwan mo, ooh-ooh-ooh<br>
+				
+				 Tatlong bilyon, ikaw lang nga ang aking gusto <br>
+               Pasensiya na kung ngayon ako'y 'di para sa 'yo <br>
+               Tayo ay papunta na sa 'ting bagong yugto <br>
+                 'Yokong mabuhay sa isang mundong walang tayo <br>
+				
+				Tatlong bilyon, ikaw lang nga ang aking gusto<br>
+                Pasensiya na kung ngayon ako'y 'di para sa 'yo<br>
+                Tayo ay papunta na sa 'ting bagong yugto<br>
+               'Yokong mabuhay sa isang mundong walang tayo<br>
+			   
+			    'Di ba? Nakakaputang ina <br>
+                 Tayo'y lumilipad, at ako'y iniwan mo <br>
+                 Tayo'y lumilipad, at ako'y iniwan mo<br>
+				
+			Sa ere, ere, ere (oh, 'di ba? Nakakaputang ina) <br>
+                (Tayo'y lumilipad) at ako'y iniwan mo <br>
+               Sa ere, ere, oh, ere (oh, 'di ba? Pinagmukha mo 'kong tanga) <br>
+               (Tayo'y lumilipad) at ako'y iniwan mo <br>
+			   
+			    Oh, 'di ba? Nakakaputang ina <br>
+               Tayo'y lumilipad, at ako'y iniwan mo pa <br>
+           'Di ba? Ginawa mo pa akong tanga <br>
+              Tayo'y lumilipad, at ako'y iniwan mo, hmm <br>
+				
+				
+            </marquee>
+			
+        </div>	
+	  <br> 
+	 	
+        <button><a href="main.html"><h4>Back</h4></a></button>
+  
+</body>
+
+</html>
+
+
+
+

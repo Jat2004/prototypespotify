@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demonyo By: Juan Karlos</title>
+
+    <style>
+        h1 {
+            font-size: 100px;
+            color: lightblue;
+            font-family: Tacoma;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: Red;
+            font-family: Tacoma;
+        }
+
+        body {
+            font-size: 50px;
+            color: lightblue;
+            opacity: 1.0;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 10%;
+            z-index: -1; 
+        }
+
+        .content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .transparent-image {
+            opacity: 1.0;
+        }
+		 .lyrics {
+            font-size: 30px;
+            color: lightblue;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+			
+            border-radius: 30px;
+        }
+		.highlight {
+            background-color: yellow;
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1></h1>
+        <br><br><br><br><br>
+       <br><br><br><br> <button><a href="main.html"><h4>Back</h4></a></button>
+    </div>
+
+    <video autoplay loop muted id="background-video">
+        <source src="sky1.mp4" type="video/mp4">
+       
+    </video>
+
+    <audio autoplay loop id="background-audio">
+        <source src="demonyo.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <script>
+        var audio = document.getElementById('background-audio');
+        audio.currentTime = 40;
+    </script>
+	<div class="content">
+	<br><br><br><br>
+	 <div class="lyrics">
+            <marquee behavior="scroll" direction="up" scrollamount="1.5"> 
+               <br>Demonyo By: Juan Karlos<br><br><br> <br><br>  <br><br> <br> 
+			Alam mo ba na hindi kita magugustuhan<br>
+              Kung pangit ang ugali mo<br>
+           <br>   Kaya sinta, sana ay huwag ka nang magtaka<br>
+               Kung ba't napa-ibig sa 'yo<br>
+               
+				<br>Ikaw ay anghel na napadpad sa impyerno<br>
+               Ako ang demonyong gagabay sa iyo <br>
+			   
+            <br><br> Pabalik sa langit habang tayo ay paakyat<br> 
+            <br>Ako'y napa-ibig sa 'yo<br><br>
+				
+				<br>Pa'no na 'pag bigla kang wala sa aking piling?<br>
+               Kung ikaw ang nagbibigay ng kulay sa aking puso at damdamin <br>
+			   
+               <br>Ikaw ay prinsesang napadpad sa malayo<br>
+               Ako ang aliping gagabay sa iyo <br>
+
+				
+		<br>Pabalik sa palasyo habang tayo'y naglalakbay<br>
+             Ako'y nahulog sa 'yo, sa 'yo<br>
+			 
+               <br> Pabalik sa palasyo habang tayo'y naglalakbay<br>
+                 Ako'y nahulog sa 'yo<br>
+				
+			
+            </marquee>
+			
+        </div>	
+</body>
+
+</html>

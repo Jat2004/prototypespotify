@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>  Buwan By: Juan Karlos</title>
+
+    <style>
+        h1 {
+            font-size: 70px;
+            color: lightgreen;
+            font-family: Tacoma;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: Red;
+            font-family: Tacoma;
+        }
+
+        body {
+		   
+            font-size: 50px;
+            color: lightgreen;
+            opacity: 1.0;
+            overflow: hidden; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        video {
+            position: center;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 10%;
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .transparent-image {
+            opacity: 0.7;
+        }
+		.lyrics {
+            font-size: 30px;
+            color: lightblue;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+			
+            border-radius: 30px;
+        }
+		.highlight {
+            background-color: yellow;
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1> </h1>
+	 <br><br><br><br><br><br><br>
+
+       <br><br><br> <button><a href="main.html"><h4>Back</h4></a></button>
+    </div>
+
+    <video autoplay loop muted id="background-video">
+        <source src="moon.mp4" type="video/mp4">
+       
+    </video>
+
+    <audio autoplay loop id="background-audio">
+        <source src="buwan.mp3" type="audio/mpeg">
+      
+    </audio>
+
+    <script>
+        var audio = document.getElementById('background-audio');
+        audio.currentTime = 20;
+    </script>
+	<div class="content">
+	<br><br><br><br>
+	 <div class="lyrics">
+            <marquee behavior="scroll" direction="up" scrollamount="1.5"> 
+               <br>Buwan By: Juan Karlos<br>  <br><br> <br><br> <br>  <br> 
+			Ako'y sa'yo, ikaw ay akin<br>
+              Ganda mo sa paningin<br>
+             Ako ngayo'y nag-iisa<br><br>
+                Sana ay tabihan na<br>
+                
+				Sa ilalim ng puting ilaw <br>
+                Sa dilaw na buwan <br>
+              <br>  Pakinggan mo ang aking sigaw<br> 
+              Sa dilaw na buwan<br>
+				
+				Ayokong mabuhay nang malungkot <br>
+             <br>  Ikaw ang nagpapasaya <br>
+               At makakasama hanggang sa pagtanda <br>
+                Halina't tayo'y humiga (Saan kaya?) <br>
+             
+				
+			<br> Sa ilalim ng puting ilaw<br>
+              Sa dilaw na buwan<br>
+                Pakinggan mo ang aking sigaw<br>
+                 <br> Sa dilaw na buwan, oh<br>
+				
+				
+Ang iyong ganda'y umaabot sa buwan<br>
+               Ang tibok ng puso'y dinig sa kalawakan<br>
+              <br>  At bumabalik dito sa akin<br>
+              Ikaw ang mahal, ikaw lang ang mamahalin<br>
+			  Pakinggan ang puso't damdamin<br>
+			 <br>  Damdamin aking damdamin<br>
+				
+				 Sa ilalim ng puting ilaw (Ang iyong ganda'y) <br>
+              Sa dilaw na buwan (Umaabot sa buwan) <br>
+             <br>  Pakinggan mo ang aking sigaw (Ang tibok ng puso'y) <br>
+                Sa dilaw na buwan (Rinig sa kalawakan) <br>
+				
+				Sa ilalim ng puting ilaw (Ang iyong ganda'y)<br>
+               <br>  Sa dilaw na buwan (Umaabot sa buwan)<br>
+               La-ah, pakinggan mo ang aking sigaw (Ang tibok ng puso'y)<br>
+               Sa dilaw na buwan (Rinig sa kalawakan)<br>
+			   
+			    La-ah <br>
+                 La-la-la-la-la <br>
+                 La-la-la-la-la-la<br>
+				
+			<br> Pakinggan, pakingan, pakingan <br>
+                Pakinggan mo ang aking sigaw o sinta <br>
+              Sa dilaw na buwan <br>
+               
+				
+				
+            </marquee>
+			
+        </div>	
+</body>
+
+</html>
